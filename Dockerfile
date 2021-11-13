@@ -1,21 +1,8 @@
-#Passo 1
-
-FROM node:10-alpine as build-step
-
-RUN mkdir /app
-
+FROM node:13-alpine
 WORKDIR /app
+ENV PATH /app/node_modules/ .bin:$PATH
+COPY package.json /app/package.json
+RUN npm install 
+RUN npm install react-scripts@3.3.1 -g
 
-COPY package.json /app
-
-RUN npm install
-
-COPY . /app
-
-RUN npm run build
-
-#Passo 2
-
-FROM nginx:1.17.1-alpine
-
-COPY --from=build-step app/build /usr/share/nginx/html
+CMD ["npm", "start"]
