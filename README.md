@@ -30,7 +30,7 @@ npm start
 ```console
 make up
 ```
-### 2 - Verifique o [http://localhost:3001](localhost:3001) onde o projeto devera estar rodando.
+### 2 - Verifique o [http://localhost:3001](http://localhost:3001) onde o projeto devera estar rodando.
 
 ### 3 - Parar o servidor de desenvolvimento:
 ```console
@@ -42,7 +42,7 @@ make down
 ```console
 make up-prod
 ```
-### 2 - Verifique o [http://localhost:8080](localhost:8080) onde o projeto devera estar rodando.
+### 2 - Verifique o [http://localhost:8080](http://localhost:8080) onde o projeto devera estar rodando.
 
 ### 3- Pare o servidor de desenvolvimento:
 ```console
